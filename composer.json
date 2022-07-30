@@ -1,0 +1,26 @@
+{
+    "name": "nkf/enums",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Vasiliy Nikiforov",
+            "email": "kaktusv6@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "<=8.0.21"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Enums\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
