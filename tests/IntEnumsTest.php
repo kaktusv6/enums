@@ -11,4 +11,9 @@ class IntEnumsTest extends BaseEnumsTest
         $this->assertTrue(IntEnums::exist(1), '1 is not exist to ' . IntEnums::class);
         $this->assertFalse(IntEnums::exist(-1), '-1 is exist to ' . IntEnums::class);
     }
+
+    public function testCastToString(): void
+    {
+        $this->assertStringContainsString('0,1,2', IntEnums::toString());
+    }
 }
