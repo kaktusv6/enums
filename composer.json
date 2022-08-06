@@ -1,6 +1,7 @@
 {
     "name": "nkf/enums",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Vasiliy Nikiforov",
