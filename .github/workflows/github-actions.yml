@@ -8,12 +8,14 @@ jobs:
 
     strategy:
       matrix:
-        php: [8.0]
+        php: [8.0.21]
 
     steps:
       - uses: actions/checkout@v2
 
       - uses: php-actions/composer@v5
+        with:
+          php_version: 8.0
 
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v2
